@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: $spacing-tiny;
+    }
+}
+
+.toast {
+    position: absolute;
+    background-color: $secondary-color;
+    color: white;
+    padding: $spacing-tiny $spacing-medium;
+    top: $spacing-tiny;
+    right: -100%;
+    border-radius: $rounded-tiny;
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}

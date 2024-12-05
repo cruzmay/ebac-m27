@@ -1,0 +1,21 @@
+.users {
+ margin: $spacing-medium;
+ &__title {
+    font-size: 2em;
+ }
+ &__list {
+    display: flex;
+    list-style: none;
+    gap: $spacing-medium;
+    padding-left: 0;
+    @include screen-size("sm") {
+    flex-direction: column;
+    }
+    &__item {
+        background-color: $card-backgorund-color;
+        padding: $spacing-medium;
+        font-size: 1.3em;
+        border-radius: $rounded-small;
+    }
+ }
+}
